@@ -4,9 +4,25 @@
   <meta charset="UTF-8">
   <title>Izglītība, kas pielāgojas tev</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+    body {color:#1f2937; line-height:1.6;}
+    header {padding:1rem 2rem; background:#f3f4f6;}
+    .navbar {display:flex; justify-content:space-between; align-items:center;}
+    .nav-links {display:flex; list-style:none;}
+    .nav-links a {margin-left:20px; text-decoration:none; color:#1f2937; font-weight:500;}
+    .hero {display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; padding:4rem 2rem;}
+    .hero-text {max-width:500px;}
+    .hero h1 {font-size:2.5rem; margin-bottom:1rem;}
+    .hero p {color:#6b7280; margin-bottom:2rem;}
+    .buttons a {margin-right:10px; padding:12px 24px; border-radius:8px; text-decoration:none; font-weight:600;}
+    .primary {background:#4f73ff; color:white;}
+    .secondary {border:2px solid #4f73ff; color:#4f73ff;}
+    .buttons a:hover {opacity:0.85; transition:0.3s;}
+    .hero-image img {max-width:400px; width:100%;}
+    footer {text-align:center; padding:1.5rem; background:#f3f4f6; margin-top:3rem;}
+  </style>
 </head>
-
 <body>
 
 <header>
@@ -23,44 +39,19 @@
 </header>
 
 <main>
-
 <section class="hero">
   <div class="hero-text">
     <h1>Izglītība, kas pielāgojas tev</h1>
-    <p>
-      Mācies gudrāk, nevis vairāk — personalizēta tiešsaistes
-      mācību platforma jauniešiem
-    </p>
-
+    <p>Mācies gudrāk, nevis vairāk — personalizēta tiešsaistes mācību platforma jauniešiem</p>
     <div class="buttons">
-      <a href="signup.html" class="btn primary">Reģistrēties bez maksas</a>
-      <a href="courses.html" class="btn secondary">Apskatīt kursus</a>
+      <a href="signup.html" class="primary">Reģistrēties bez maksas</a>
+      <a href="courses.html" class="secondary">Apskatīt kursus</a>
     </div>
   </div>
-
   <div class="hero-image">
-    <img src="images/hero.png" alt="Skolniece mācās tiešsaistē">
+    <img src="hero.png" alt="Skolniece mācās tiešsaistē">
   </div>
 </section>
-
-<section class="benefits">
-  <h2>Kāpēc mums tas ir vajadzīgs?</h2>
-
-  <div class="benefit-columns">
-    <article>
-      <p>✖ Vienāds mācību saturs visiem</p>
-      <p>✖ Zema motivācija</p>
-      <p>✖ Grūti sekot savam progresam</p>
-    </article>
-
-    <article>
-      <p>✔ Individuāli pielāgotu mācību plānu</p>
-      <p>✔ Interaktīvas nodarbības un testus</p>
-      <p>✔ Skaidru progresu un atgriezenisko saiti</p>
-    </article>
-  </div>
-</section>
-
 </main>
 
 <footer>
