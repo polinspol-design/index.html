@@ -2,20 +2,17 @@
 <html lang="lv">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Izglītība, kas pielāgojas tev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">EduSmart</div>
-    <ul class="nav-links">
-      <li><a href="#">Sākums</a></li>
-      <li><a href="#">Kursi</a></li>
-      <li><a href="#">Profils</a></li>
+<header class="header">
+  <nav class="nav">
+    <div class="logo">Izglītība, kas pielāgojas tev</div>
+    <ul class="menu">
       <li><a href="#">Par mums</a></li>
       <li><a href="#">Kontakti</a></li>
     </ul>
@@ -28,37 +25,42 @@
   <div class="hero-text">
     <h1>Izglītība, kas pielāgojas tev</h1>
     <p>
-      Mācies gudrāk, nevis vairāk — personalizēta tiešsaistes mācību platforma jauniešiem.
+      Mācies gudrāk, nevis vairāk — personalizēta tiešsaistes
+      mācību platforma jauniešiem
     </p>
 
     <div class="buttons">
-      <a href="#" class="btn primary">Reģistrēties bez maksas</a>
-      <a href="#" class="btn secondary">Apskatīt kursus</a>
+      <button class="btn primary">Reģistrēties bez maksas</button>
+      <button class="btn secondary">Apskatīt kursus</button>
     </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="hero.png" alt="Skolniece mācās tiešsaistē">
   </div>
 </section>
 
 <section class="benefits">
   <h2>Kāpēc mums tas ir vajadzīgs?</h2>
 
-  <div class="benefit-columns">
-    <article>
-      <p>✖ Vienāds mācību saturs visiem</p>
-      <p>✖ Zema motivācija</p>
-      <p>✖ Grūti sekot savam progresam</p>
-    </article>
+  <div class="columns">
+    <ul class="minus">
+      <li>✖ Vienāds mācību saturs visiem</li>
+      <li>✖ Zema motivācija</li>
+      <li>✖ Grūti sekot savam progresam</li>
+    </ul>
 
-    <article>
-      <p>✔ Individuāli pielāgots mācību plāns</p>
-      <p>✔ Interaktīvas nodarbības un testi</p>
-      <p>✔ Skaidra progresa uzskaite</p>
-    </article>
+    <ul class="plus">
+      <li>✔ Individuāli pielāgots mācību plāns</li>
+      <li>✔ Interaktīvas nodarbības un testi</li>
+      <li>✔ Skaidrs progress un atgriezeniskā saite</li>
+    </ul>
   </div>
 </section>
 
 </main>
 
-<footer>
+<footer class="footer">
   <p>© 2025 Polina Suhanova</p>
 </footer>
 
