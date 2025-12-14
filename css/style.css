@@ -5,36 +5,36 @@
   font-family: Arial, sans-serif;
 }
 
+:root {
+  --primary: #4f73ff;
+  --dark: #1f2937;
+  --gray: #6b7280;
+}
+
 body {
-  background: #f9fafb;
-  color: #1f2937;
+  color: var(--dark);
+  line-height: 1.6;
 }
 
-.header {
-  background: white;
-  padding: 20px 40px;
+header {
+  padding: 1rem 2rem;
 }
 
-.nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.menu {
-  list-style: none;
+.nav-links {
   display: flex;
-  gap: 20px;
+  list-style: none;
 }
 
-.menu a {
+.nav-links a {
+  margin-left: 20px;
   text-decoration: none;
-  color: #1f2937;
+  color: var(--dark);
   font-weight: 500;
 }
 
@@ -42,96 +42,79 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 40px;
-  gap: 40px;
+  padding: 4rem 2rem;
 }
 
 .hero-text {
   max-width: 500px;
 }
 
-.hero-text h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.hero-text p {
-  font-size: 16px;
-  color: #6b7280;
-  margin-bottom: 30px;
+.hero p {
+  color: var(--gray);
+  margin-bottom: 2rem;
 }
 
-.buttons {
-  display: flex;
-  gap: 15px;
+.buttons a {
+  margin-right: 10px;
 }
 
 .btn {
   padding: 12px 24px;
   border-radius: 8px;
-  font-size: 14px;
-  cursor: pointer;
-  border: none;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .primary {
-  background: #4f73ff;
+  background: var(--primary);
   color: white;
 }
 
 .secondary {
-  background: white;
-  border: 2px solid #4f73ff;
-  color: #4f73ff;
+  border: 2px solid var(--primary);
+  color: var(--primary);
 }
 
 .btn:hover {
   opacity: 0.85;
-}
-
-.hero-image img {
-  max-width: 320px;
+  transition: 0.3s;
 }
 
 .benefits {
-  background: white;
-  padding: 50px 40px;
+  padding: 3rem 2rem;
 }
 
-.benefits h2 {
-  margin-bottom: 30px;
-  font-size: 24px;
-}
-
-.columns {
+.benefit-columns {
   display: flex;
-  gap: 60px;
+  gap: 4rem;
+  margin-top: 2rem;
 }
 
-.columns ul {
-  list-style: none;
+.benefits p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
-.columns li {
-  margin-bottom: 15px;
-  font-size: 16px;
-}
-
-.footer {
+footer {
   text-align: center;
-  padding: 20px;
+  padding: 1.5rem;
   background: #f3f4f6;
-  margin-top: 40px;
+  margin-top: 3rem;
 }
 
-/* АДАПТИВ */
+/* Адаптив */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
   }
 
-  .columns {
+  .benefit-columns {
     flex-direction: column;
   }
 }
