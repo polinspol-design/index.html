@@ -6,17 +6,16 @@
 }
 
 body {
+  background: #f9fafb;
   color: #1f2937;
-  background-color: #ffffff;
-  line-height: 1.6;
 }
 
-/* NAVBAR */
-header {
+.header {
+  background: white;
   padding: 20px 40px;
 }
 
-.navbar {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,62 +23,64 @@ header {
 
 .logo {
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 18px;
 }
 
-.nav-links {
+.menu {
   list-style: none;
   display: flex;
+  gap: 20px;
 }
 
-.nav-links li {
-  margin-left: 20px;
-}
-
-.nav-links a {
+.menu a {
   text-decoration: none;
   color: #1f2937;
   font-weight: 500;
 }
 
-.nav-links a:hover {
-  color: #4f73ff;
-}
-
-/* HERO */
 .hero {
-  padding: 80px 40px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  gap: 40px;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
-.hero p {
+.hero-text p {
+  font-size: 16px;
   color: #6b7280;
   margin-bottom: 30px;
 }
 
-.buttons a {
-  margin: 0 10px;
+.buttons {
+  display: flex;
+  gap: 15px;
 }
 
 .btn {
   padding: 12px 24px;
   border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
 }
 
 .primary {
-  background-color: #4f73ff;
+  background: #4f73ff;
   color: white;
 }
 
 .secondary {
+  background: white;
   border: 2px solid #4f73ff;
   color: #4f73ff;
 }
@@ -88,44 +89,49 @@ header {
   opacity: 0.85;
 }
 
-/* BENEFITS */
+.hero-image img {
+  max-width: 320px;
+}
+
 .benefits {
-  padding: 60px 40px;
+  background: white;
+  padding: 50px 40px;
 }
 
 .benefits h2 {
-  text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  font-size: 24px;
 }
 
-.benefit-columns {
+.columns {
   display: flex;
-  justify-content: center;
   gap: 60px;
 }
 
-.benefits p {
+.columns ul {
+  list-style: none;
+}
+
+.columns li {
   margin-bottom: 15px;
-  font-size: 1.1rem;
+  font-size: 16px;
 }
 
-/* FOOTER */
-footer {
+.footer {
   text-align: center;
-  padding: 30px;
-  background-color: #f3f4f6;
-  margin-top: 60px;
+  padding: 20px;
+  background: #f3f4f6;
+  margin-top: 40px;
 }
 
-/* RESPONSIVE */
+/* АДАПТИВ */
 @media (max-width: 768px) {
-  .nav-links {
+  .hero {
     flex-direction: column;
-    gap: 10px;
+    text-align: center;
   }
 
-  .benefit-columns {
+  .columns {
     flex-direction: column;
-    align-items: center;
   }
 }
